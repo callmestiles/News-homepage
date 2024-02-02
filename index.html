@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+</head>
+
+<body>
+  <div class="overlay" data-expanded="false">
+
+  </div>
+  <div class="grid-container">
+    <header class="header">
+      <img src="assets/images/logo.svg" alt="Logo" class="header__logo">
+
+
+      <button class="mobile-nav-toggle" aria-controls="nav" data-expanded="false"></button>
+
+      <ul class="nav" id="nav" data-visible="false">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">New</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Popular</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Trending</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Categories</a></li>
+      </ul>
+    </header>
+
+    <main class="main">
+      <!-- <div class="main__img"></div> -->
+      <div class="left">
+        <div class="left__img"></div>
+        <h1 class="left__heading">The Bright Future of Web 3.0 ?</h1>
+        <p class="paragraph paragraph--dark left__paragraph">
+          We dive into the next evolution of the web that claims to put the power of the
+          platforms back into the hands of the people. But is it really fufilling its promise?
+        </p>
+        <button class="btn left__btn">Read more</button>
+      </div>
+
+      <div class="right">
+        <h2 class="heading-2 heading-2--dark">New</h2>
+
+        <div class="new__content">
+          <h4 class="heading-4 heading-4--light mb-small right__heading">Hydrogen VS Electrical Cars</h4>
+          <p class="paragraph paragraph--light">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="new__content">
+          <h4 class="heading-4 heading-4--light mb-small right__heading">The Downsides of AI Artistry</h4>
+          <p class="paragraph paragraph--light">
+            What are the possible adverse effects of on-demand AI image generation?
+          </p>
+        </div>
+
+        <hr>
+
+        <div class="new__content">
+          <h4 class="heading-4 heading-4--light mb-small right__heading">Is VC Funding Drying Up?</h4>
+          <p class="paragraph paragraph--light">
+            Private funding by VC firms is down 50%. Let's take a look at What
+            that means.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <div class="trend">
+      <div class="trend__content">
+        <img src="assets/images/image-retro-pcs.jpg" alt="Retro Pc" class="trend__img">
+        <div class="trend__text">
+          <h2 class="heading-2 heading-2--light mb-small">01</h2>
+          <h4 class="heading-4 trend__heading mb-small">Reviving Retro PCs</h4>
+          <p class="paragraph paragraph--dark">
+            What happens when old PCs are given modern upgrades?
+          </p>
+        </div>
+      </div>
+
+      <div class="trend__content">
+        <img src="assets/images/image-top-laptops.jpg" alt="Laptops" class="trend__img">
+        <div class="trend__text">
+          <h2 class="heading-2 heading-2--light mb-small">02</h2>
+          <h4 class="heading-4 trend__heading mb-small">Top 10 Laptops of 2022</h4>
+          <p class="paragraph paragraph--dark">
+            Our best picks for various laptops and budgets.
+          </p>
+        </div>
+      </div>
+
+      <div class="trend__content">
+        <img src="assets/images/image-gaming-growth.jpg" alt="Game pad" class="trend__img">
+        <div class="trend__text">
+          <h2 class="heading-2 heading-2--light mb-small">03</h2>
+          <h4 class="heading-4 trend__heading mb-small">The Growth of Gaming</h4>
+          <p class="paragraph paragraph--dark">
+            How the pandemic has sparked fresh opportunities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+
+</html>

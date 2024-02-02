@@ -1,0 +1,16 @@
+{
+  "name": "news-homepage",
+  "description": "![Design preview for the News homepage coding challenge](./design/desktop-preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

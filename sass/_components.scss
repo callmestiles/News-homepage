@@ -1,0 +1,97 @@
+.nav{
+    display: flex;
+    align-items: flex-end;
+    list-style: none;
+
+    &__item{
+        z-index: 20;
+        
+        &:not(:last-child){
+            margin-right: 2.5rem;
+
+            @media only screen and (max-width: $bp-smallest){
+                margin-right: 0;
+                margin-bottom: 2.5rem;
+            }
+        }
+    }
+
+    &__link:link,
+    &__link:visited{
+        font-size: 1.5rem;
+        display: block; 
+        text-decoration: none;
+        color: $color-grey-blue-dark;
+        transition: all .2s ease;
+
+        @media only screen and (max-width: $bp-smallest){
+            font-size: 1.8rem;
+        }
+    }
+
+    &__link:active{
+        color: $color-secondary;
+    }
+
+    &[data-visible="true"]{
+        transform: translateX(0%);
+    }
+
+    @media only screen and (max-width: $bp-smallest){
+        position: fixed;
+        inset: 0 0 0 40%;
+        padding: 4rem;
+        padding-top: 15rem;
+        background-color: $color-white;
+        flex-direction: column;
+        align-items: flex-start;
+        z-index: 10;
+        transition: all .2s ease;
+        transform: translateX(100%);
+    }
+}
+
+.mobile-nav-toggle{
+    display: none;
+    
+    @media only screen and (max-width: $bp-smallest){
+        display: block;
+        position: absolute;
+        top: 5rem;
+        right: 4rem;
+        width: 3rem;
+        aspect-ratio: 1;
+        background: transparent;
+        background-image: url("../assets/images/icon-menu.svg");
+        background-repeat: no-repeat;
+        background-position: center;;
+        border: 0;
+        z-index: 20;
+    }
+
+    &[data-expanded="true"]{
+        background-image: url("../assets/images/icon-menu-close.svg");
+
+    }
+}
+
+.btn{
+    border: none;
+    border-radius: 0;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border-radius: 3px;
+    background-color: $color-secondary;
+    cursor: pointer;
+    color: $color-white;
+    transition: all .2s ease;
+
+    &:active{
+        background-color: $color-dark-blue;
+        background-position: center;
+    }
+}
